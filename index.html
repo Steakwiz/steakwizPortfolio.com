@@ -1,82 +1,105 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио</title>
+    <title>Мое Портфолио</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    body {
+    font-family: 'Inter', sans-serif;
+    background-color: #161821;
+    color: #fafbff;
+    margin: 0;
+    padding: 0;
+}
 
-        body, html {
-            height: 100%;
-            font-family: Arial, sans-serif;
-        }
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgba(22, 24, 33, 0.8);
+}
 
-        .video-background {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            z-index: -1;
-        }
+h1 {
+    font-size: 2.5em;
+}
 
-        #bg-video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
 
-        .content {
-            position: relative;
-            z-index: 1;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
 
-        h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-        }
+nav a {
+    color: #fafbff;
+    text-decoration: none;
+    font-weight: 700;
+}
 
-        p {
-            font-size: 1.5em;
-            margin-bottom: 30px;
-        }
+section {
+    padding: 50px 20px;
+    border-bottom: 1px solid #fafbff;
+}
 
-        .btn {
-            background-color: rgba(255, 255, 255, 0.7);
-            color: black;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
+.project {
+    margin-bottom: 30px;
+}
 
-        .btn:hover {
-            background-color: rgba(255, 255, 255, 1);
-        }
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(22, 24, 33, 0.8);
+}
+
+
     </style>
 </head>
 <body>
-    <div class="video-background">
-        <video autoplay muted loop id="bg-video">
-            <source src=".github/workflows/background.mp4" type="video/mp4">
-            Ваш браузер не поддерживает видео.
-        </video>
-    </div>
-    <div class="content">
+    <header>
         <h1>Добро пожаловать в мое портфолио</h1>
-        <p>Я — веб-разработчик, и здесь вы можете увидеть мои проекты.</p>
-        <a href="#projects" class="btn">Посмотреть проекты</a>
-    </div>
+        <p>Я — [Ваше Имя], веб-разработчик и дизайнер.</p>
+        <nav>
+            <ul>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>Обо мне</h2>
+        <p>Краткое описание о вас и ваших навыках.</p>
+    </section>
+    
+    <section id="projects">
+        <h2>Мои проекты</h2>
+        <div class="project">
+            <h3>Название проекта 1</h3>
+            <p>Описание проекта 1.</p>
+        </div>
+        <div class="project">
+            <h3>Название проекта 2</h3>
+            <p>Описание проекта 2.</p>
+        </div>
+        <!-- Добавьте больше проектов по мере необходимости -->
+    </section>
+    
+    <section id="contact">
+        <h2>Контакты</h2>
+        <p>Электронная почта: <a href="mailto:example@example.com">example@example.com</a></p>
+        <p>Социальные сети: [Ссылки на ваши социальные сети]</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 [Ваше Имя]. Все права защищены.</p>
+    </footer>
 </body>
 </html>
 
